@@ -9,8 +9,8 @@ import java.util.logging.*;
 public class task2 {
     public static void main(String[] args) throws IOException {
         Logger logger = Logger.getLogger(task2.class.getName());
-        FileHandler fh = new FileHandler("task2.log");
-        logger.addHandler(fh);
+        FileHandler fileHandler = new FileHandler("task2.log");
+        logger.addHandler(fileHandler);
         int[] array = {2, 5, 1, -7, 3, 64, 0};
 
         logger.info("start sort");
