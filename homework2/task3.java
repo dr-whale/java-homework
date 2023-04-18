@@ -10,6 +10,8 @@ public class task3 {
         Logger logger = Logger.getLogger(task3.class.getName());
         FileHandler fileHandler = new FileHandler("task3.log");
         logger.addHandler(fileHandler);
+        SimpleFormatter formatter = new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
         Boolean stop_command = false;
         String switchString;
         Scanner scan = new Scanner(System.in);

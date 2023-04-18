@@ -10,6 +10,8 @@ public class task2 {
     public static void main(String[] args) throws IOException {
         Logger logger = Logger.getLogger(task2.class.getName());
         FileHandler fileHandler = new FileHandler("task2.log");
+        SimpleFormatter formatter = new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
         logger.addHandler(fileHandler);
         int[] array = {2, 5, 1, -7, 3, 64, 0};
 
